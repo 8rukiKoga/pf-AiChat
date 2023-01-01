@@ -49,6 +49,30 @@ struct ContentView: View {
                 
             }
             .padding()
+            
+            // キーボード部分
+            VStack {
+                Spacer()
+                HStack {
+                    TextField("テキストを入力", text: $inputText)
+                        .padding(12)
+                        .background(Color(.systemGray5))
+                        .cornerRadius(8)
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("送信")
+                            .foregroundColor(.white).bold()
+                            .padding(.vertical, 10)
+                            .padding(.horizontal, 15)
+                            .background(Color(.systemBrown))
+                            .cornerRadius(8)
+                    }
+
+                }
+                .padding()
+            }
         }
     }
 }
