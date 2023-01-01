@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D9CFEE22961CE960093C36E /* AiChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEE12961CE960093C36E /* AiChatApp.swift */; };
-		0D9CFEE42961CE960093C36E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEE32961CE960093C36E /* ContentView.swift */; };
+		0D9CFEE42961CE960093C36E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEE32961CE960093C36E /* ChatView.swift */; };
 		0D9CFEE62961CE9B0093C36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CFEE52961CE9B0093C36E /* Assets.xcassets */; };
 		0D9CFEE92961CE9B0093C36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CFEE82961CE9B0093C36E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		0D9CFEDE2961CE950093C36E /* AiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9CFEE12961CE960093C36E /* AiChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiChatApp.swift; sourceTree = "<group>"; };
-		0D9CFEE32961CE960093C36E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D9CFEE32961CE960093C36E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		0D9CFEE52961CE9B0093C36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9CFEE82961CE9B0093C36E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				0D9CFEE12961CE960093C36E /* AiChatApp.swift */,
-				0D9CFEE32961CE960093C36E /* ContentView.swift */,
+				0D9CFEE32961CE960093C36E /* ChatView.swift */,
 				0D9CFEE52961CE9B0093C36E /* Assets.xcassets */,
 				0D9CFEE72961CE9B0093C36E /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9CFEE42961CE960093C36E /* ContentView.swift in Sources */,
+				0D9CFEE42961CE960093C36E /* ChatView.swift in Sources */,
 				0D9CFEE22961CE960093C36E /* AiChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

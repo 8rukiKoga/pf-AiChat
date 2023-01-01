@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ChatView: View {
     
     @State var inputText: String = ""
     
@@ -77,9 +77,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ChatView()
     }
 }
 
