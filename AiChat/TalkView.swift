@@ -108,13 +108,19 @@ struct TalkView: View {
             
         }
         .onAppear{
+            // マイク使用許可申請
             AVCaptureDevice.requestAccess(for: AVMediaType.audio) { granted in
                 OperationQueue.main.addOperation {
                     
                 }
             }
-            
+            // 音声認識使用許可申請
+            SFSpeechRecognizer.requestAuthorization { status in
+                OperationQueue.main.addOperation {
+                }
+            }
         }
+        
     }
 }
 
