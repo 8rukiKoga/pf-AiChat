@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct TalkView: View {
+    
+    @State private var isTalking: Bool = false
+    @State private var inputText: String = ""
+    
     var body: some View {
         ZStack {
             Color(.systemGray6)
@@ -46,6 +50,41 @@ struct TalkView: View {
                 
             }
             .padding()
+            
+            VStack {
+                Spacer()
+                
+                if isTalking {
+                    Text("入力テキスト")
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                                .foregroundColor(Color(.systemGray5))
+                                .frame(minWidth: 250)
+                        )
+                        .padding(.bottom)
+                }
+                
+                Button {
+                    isTalking.toggle()
+                } label: {
+                    ZStack {
+                        Circle()
+                            .foregroundColor(isTalking ? Color(.systemBrown) : Color.clear)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 40)
+                                    .stroke(Color(.systemBrown), lineWidth: 7)
+                            )
+                        
+                        Image(systemName: isTalking ? "mic.fill" : "mic")
+                            .font(.title3).bold()
+                            .foregroundColor(isTalking ? Color(.label) : Color(.systemGray))
+                    }
+                    .frame(width: 80, height: 80)
+                }
+            }
+            .padding()
+            
         }
     }
 }
