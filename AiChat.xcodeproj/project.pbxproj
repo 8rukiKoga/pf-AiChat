@@ -12,6 +12,7 @@
 		0D9CFEE62961CE9B0093C36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CFEE52961CE9B0093C36E /* Assets.xcassets */; };
 		0D9CFEE92961CE9B0093C36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CFEE82961CE9B0093C36E /* Preview Assets.xcassets */; };
 		0D9CFEF02961D0490093C36E /* ContentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEEF2961D0490093C36E /* ContentTabView.swift */; };
+		0D9CFEF22961D2FE0093C36E /* TalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEF12961D2FE0093C36E /* TalkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0D9CFEE52961CE9B0093C36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9CFEE82961CE9B0093C36E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D9CFEEF2961D0490093C36E /* ContentTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTabView.swift; sourceTree = "<group>"; };
+		0D9CFEF12961D2FE0093C36E /* TalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				0D9CFEE12961CE960093C36E /* AiChatApp.swift */,
 				0D9CFEEF2961D0490093C36E /* ContentTabView.swift */,
+				0D9CFEF12961D2FE0093C36E /* TalkView.swift */,
 				0D9CFEE32961CE960093C36E /* ChatView.swift */,
 				0D9CFEE52961CE9B0093C36E /* Assets.xcassets */,
 				0D9CFEE72961CE9B0093C36E /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9CFEF22961D2FE0093C36E /* TalkView.swift in Sources */,
 				0D9CFEE42961CE960093C36E /* ChatView.swift in Sources */,
 				0D9CFEF02961D0490093C36E /* ContentTabView.swift in Sources */,
 				0D9CFEE22961CE960093C36E /* AiChatApp.swift in Sources */,
