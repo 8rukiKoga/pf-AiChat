@@ -14,7 +14,7 @@ struct TalkView: View {
     
     var body: some View {
         ZStack {
-            Color(.systemGray6)
+            Color(.systemBackground)
                 .ignoresSafeArea()
             
             // チャット部分
@@ -55,7 +55,7 @@ struct TalkView: View {
                 Spacer()
                 
                 if isTalking {
-                    Text("入力テキスト")
+                    Text(inputText)
                         .padding()
                         .background(
                             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
@@ -70,7 +70,7 @@ struct TalkView: View {
                 } label: {
                     ZStack {
                         Circle()
-                            .foregroundColor(isTalking ? Color(.systemBrown) : Color.clear)
+                            .foregroundColor(isTalking ? Color(.systemBrown) : Color(.systemBackground))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40)
                                     .stroke(Color(.systemBrown), lineWidth: 7)
@@ -84,6 +84,7 @@ struct TalkView: View {
                 }
             }
             .padding()
+            .padding(.bottom)
             
         }
     }

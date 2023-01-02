@@ -58,6 +58,7 @@ struct ChatView: View {
                         .padding(12)
                         .background(Color(.systemGray5))
                         .cornerRadius(8)
+                        .submitLabel(.send)
                     
                     Button {
                         
