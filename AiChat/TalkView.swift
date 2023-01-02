@@ -77,7 +77,7 @@ struct TalkView: View {
                             )
                         
                         Image(systemName: isTalking ? "mic.fill" : "mic")
-                            .font(.title3).bold()
+                            .font(.title3.bold())
                             .foregroundColor(isTalking ? Color(.label) : Color(.systemGray))
                     }
                     .frame(width: 80, height: 80)
