@@ -14,7 +14,7 @@ struct TalkView: View {
     
     var body: some View {
         ZStack {
-            Color(.systemBackground)
+            Color(.systemGray4)
                 .ignoresSafeArea()
             
             // チャット部分

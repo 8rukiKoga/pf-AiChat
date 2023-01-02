@@ -13,7 +13,7 @@ struct ChatView: View {
     
     var body: some View {
         ZStack {
-            Color(.systemGray6)
+            Color(.systemGray4)
                 .ignoresSafeArea()
             
             // チャット部分

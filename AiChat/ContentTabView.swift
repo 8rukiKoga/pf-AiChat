@@ -8,20 +8,32 @@
 import SwiftUI
 
 struct ContentTabView: View {
+    
+    init() {
+      // 文字色
+      UITabBar.appearance().unselectedItemTintColor = .orange
+      // 背景色
+      UITabBar.appearance().backgroundColor = .black
+    }
+    
     var body: some View {
         
         TabView {
             
             TalkView()
                 .tabItem {
-                    Image(systemName: "mic.fill")
+                    Image(systemName: "mic.circle.fill")
+                    Text("Talk")
                 }
             
             ChatView()
                 .tabItem {
-                    Image(systemName: "bubble.left.and.bubble.right.fill")
+                    Image(systemName: "bubble.left.circle.fill")
+                    Text("Chat")
                 }
         }
+        // アイコン色
+        .accentColor(.orange)
         
     }
 }
