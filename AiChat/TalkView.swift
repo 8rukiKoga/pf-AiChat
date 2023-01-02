@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import Speech
+import AVFoundation
 
 struct TalkView: View {
     
-    @State private var isTalking: Bool = false
-    @State private var inputText: String = ""
+    @ObservedObject private var speechRecorder = SpeechRecorder()
+    @State private var showingAlert = false
     
     var body: some View {
+        
         ZStack {
             Color(.systemGray4)
                 .ignoresSafeArea()
@@ -54,8 +57,8 @@ struct TalkView: View {
             VStack {
                 Spacer()
                 
-                if isTalking {
-                    Text(inputText)
+                if speechRecorder.audioRunning {
+                    Text(speechRecorder.audioText)
                         .padding()
                         .background(
                             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
@@ -66,25 +69,50 @@ struct TalkView: View {
                 }
                 
                 Button {
-                    isTalking.toggle()
+                    speechRecorder.audioRunning.toggle()
+                    
+                    if(AVCaptureDevice.authorizationStatus(for: AVMediaType.audio) == .authorized &&
+                       SFSpeechRecognizer.authorizationStatus() == .authorized){
+                        showingAlert = false
+                        speechRecorder.toggleRecording()
+                        if speechRecorder.audioRunning {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                                
+                            }
+                        }
+                    }
+                    else{
+                        showingAlert = true
+                    }
                 } label: {
                     ZStack {
                         Circle()
-                            .foregroundColor(isTalking ? Color(.systemBrown) : Color(.systemBackground))
+                            .foregroundColor(speechRecorder.audioRunning ? Color(.systemBrown) : Color(.systemBackground))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40)
                                     .stroke(Color(.systemBrown), lineWidth: 7)
                             )
                         
-                        Image(systemName: isTalking ? "mic.fill" : "mic")
+                        Image(systemName: speechRecorder.audioRunning ? "mic.fill" : "mic")
                             .font(.title3.bold())
-                            .foregroundColor(isTalking ? Color(.label) : Color(.systemGray))
+                            .foregroundColor(speechRecorder.audioRunning ? Color(.label) : Color(.systemGray))
                     }
                     .frame(width: 80, height: 80)
+                }
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("マイクの使用または音声の認識が許可されていません"))
                 }
             }
             .padding()
             .padding(.bottom)
+            
+        }
+        .onAppear{
+            AVCaptureDevice.requestAccess(for: AVMediaType.audio) { granted in
+                OperationQueue.main.addOperation {
+                    
+                }
+            }
             
         }
     }
