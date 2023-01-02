@@ -12,7 +12,7 @@ struct ContentTabView: View {
         
         TabView {
             
-            ChatView()
+            TalkView()
                 .tabItem {
                     Image(systemName: "mic.fill")
                 }
