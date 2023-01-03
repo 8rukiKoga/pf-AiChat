@@ -11,9 +11,9 @@ struct ContentTabView: View {
     
     init() {
       // 文字色
-      UITabBar.appearance().unselectedItemTintColor = .orange
+      UITabBar.appearance().unselectedItemTintColor = .brown
       // 背景色
-      UITabBar.appearance().backgroundColor = .black
+      UITabBar.appearance().backgroundColor = .white
     }
     
     var body: some View {
@@ -33,7 +33,7 @@ struct ContentTabView: View {
                 }
         }
         // アイコン色
-        .accentColor(.orange)
+        .accentColor(.brown)
         
     }
 }
