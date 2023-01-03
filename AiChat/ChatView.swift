@@ -10,6 +10,11 @@ import SwiftUI
 struct ChatView: View {
     
     @State var inputText: String = ""
+    var chats: [Chat] = [
+        Chat(isSentByUser: true, text: "こんにちは"),
+        Chat(isSentByUser: true, text: "あなたの名前はなんですか？"),
+        Chat(isSentByUser: false, text: "Meboです。😄")
+    ]
     
     var body: some View {
         ZStack {
@@ -17,38 +22,7 @@ struct ChatView: View {
                 .ignoresSafeArea()
             
             // チャット部分
-            ScrollView {
-                VStack {
-                    HStack {
-                        VStack {
-                            Text("こんにちは")
-                        }
-                        .padding()
-                        .background(RoundedCorners(color: Color(.systemGray5), tl: 26, tr: 26, bl: 2, br: 26))
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        VStack {
-                            Text("あなたの名前はなんですか？")
-                        }
-                        .padding()
-                        .background(RoundedCorners(color: Color(.systemGray5), tl: 26, tr: 26, bl: 2, br: 26))
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Spacer()
-                        VStack {
-                            Text("ハルキです。")
-                        }
-                        .padding()
-                        .background(RoundedCorners(color: Color(.systemBrown), tl: 26, tr: 26, bl: 26, br: 2))
-                    }
-                }
-                
-            }
-            .padding()
+            ChatFeedView(chats: chats)
             
             // キーボード部分
             VStack {

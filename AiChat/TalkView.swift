@@ -27,15 +27,7 @@ struct TalkView: View {
                 .ignoresSafeArea()
             
             // チャット部分
-            ScrollView {
-                VStack {
-                    ForEach(chats) { remark in
-                        BubbleView(remark: remark)
-                    }
-                }
-                
-            }
-            .padding()
+            ChatFeedView(chats: chats)
             
             // マイク部分
             VStack {

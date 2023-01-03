@@ -16,6 +16,7 @@
 		0D9CFEF4296329340093C36E /* SpeechRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEF3296329340093C36E /* SpeechRecorder.swift */; };
 		0DC2771729646E73004E40E9 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2771629646E73004E40E9 /* ChatModel.swift */; };
 		0DC27719296470B1004E40E9 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC27718296470B1004E40E9 /* BubbleView.swift */; };
+		0DC2771B296471E3004E40E9 /* ChatFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2771A296471E3004E40E9 /* ChatFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0D9CFEF3296329340093C36E /* SpeechRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecorder.swift; sourceTree = "<group>"; };
 		0DC2771629646E73004E40E9 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		0DC27718296470B1004E40E9 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		0DC2771A296471E3004E40E9 /* ChatFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				0DC27718296470B1004E40E9 /* BubbleView.swift */,
 				0DC2771629646E73004E40E9 /* ChatModel.swift */,
 				0D9CFEE32961CE960093C36E /* ChatView.swift */,
+				0DC2771A296471E3004E40E9 /* ChatFeedView.swift */,
 				0D9CFEF3296329340093C36E /* SpeechRecorder.swift */,
 				0D9CFEE52961CE9B0093C36E /* Assets.xcassets */,
 				0D9CFEE72961CE9B0093C36E /* Preview Content */,
@@ -156,6 +159,7 @@
 				0D9CFEE42961CE960093C36E /* ChatView.swift in Sources */,
 				0DC27719296470B1004E40E9 /* BubbleView.swift in Sources */,
 				0D9CFEF4296329340093C36E /* SpeechRecorder.swift in Sources */,
+				0DC2771B296471E3004E40E9 /* ChatFeedView.swift in Sources */,
 				0D9CFEF02961D0490093C36E /* ContentTabView.swift in Sources */,
 				0D9CFEE22961CE960093C36E /* AiChatApp.swift in Sources */,
 				0DC2771729646E73004E40E9 /* ChatModel.swift in Sources */,
