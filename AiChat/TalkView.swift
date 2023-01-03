@@ -14,6 +14,12 @@ struct TalkView: View {
     @ObservedObject private var speechRecorder = SpeechRecorder()
     @State private var showingAlert = false
     
+    var chats: [Chat] = [
+        Chat(isSentByUser: true, text: "こんにちは"),
+        Chat(isSentByUser: true, text: "あなたの名前はなんですか？"),
+        Chat(isSentByUser: false, text: "Meboです。😄")
+    ]
+    
     var body: some View {
         
         ZStack {
@@ -23,37 +29,36 @@ struct TalkView: View {
             // チャット部分
             ScrollView {
                 VStack {
-                    HStack {
-                        VStack {
-                            Text("こんにちは")
-                        }
-                        .padding()
-                        .background(RoundedCorners(color: Color(.systemGray5), tl: 26, tr: 26, bl: 2, br: 26))
-                        Spacer()
-                    }
                     
-                    HStack {
-                        VStack {
-                            Text("あなたの名前はなんですか？")
+                    ForEach(chats) { remark in
+                        
+                        if remark.isSentByUser {
+                            HStack {
+                                Spacer()
+                                VStack {
+                                    Text(remark.text)
+                                }
+                                .padding()
+                                .background(RoundedCorners(color: Color(.systemBrown), tl: 26, tr: 26, bl: 26, br: 2))
+                            }
+                        } else {
+                            HStack {
+                                VStack {
+                                    Text(remark.text)
+                                }
+                                .padding()
+                                .background(RoundedCorners(color: Color(.systemGray5), tl: 26, tr: 26, bl: 2, br: 26))
+                                Spacer()
+                            }
                         }
-                        .padding()
-                        .background(RoundedCorners(color: Color(.systemGray5), tl: 26, tr: 26, bl: 2, br: 26))
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Spacer()
-                        VStack {
-                            Text("ハルキです。")
-                        }
-                        .padding()
-                        .background(RoundedCorners(color: Color(.systemBrown), tl: 26, tr: 26, bl: 26, br: 2))
+                        
                     }
                 }
                 
             }
             .padding()
             
+            // マイク部分
             VStack {
                 Spacer()
                 

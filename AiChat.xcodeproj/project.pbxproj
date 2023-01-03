@@ -14,6 +14,7 @@
 		0D9CFEF02961D0490093C36E /* ContentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEEF2961D0490093C36E /* ContentTabView.swift */; };
 		0D9CFEF22961D2FE0093C36E /* TalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEF12961D2FE0093C36E /* TalkView.swift */; };
 		0D9CFEF4296329340093C36E /* SpeechRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CFEF3296329340093C36E /* SpeechRecorder.swift */; };
+		0DC2771729646E73004E40E9 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2771629646E73004E40E9 /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0D9CFEEF2961D0490093C36E /* ContentTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTabView.swift; sourceTree = "<group>"; };
 		0D9CFEF12961D2FE0093C36E /* TalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkView.swift; sourceTree = "<group>"; };
 		0D9CFEF3296329340093C36E /* SpeechRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecorder.swift; sourceTree = "<group>"; };
+		0DC2771629646E73004E40E9 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0D9CFEE12961CE960093C36E /* AiChatApp.swift */,
 				0D9CFEEF2961D0490093C36E /* ContentTabView.swift */,
 				0D9CFEF12961D2FE0093C36E /* TalkView.swift */,
+				0DC2771629646E73004E40E9 /* ChatModel.swift */,
 				0D9CFEE32961CE960093C36E /* ChatView.swift */,
 				0D9CFEF3296329340093C36E /* SpeechRecorder.swift */,
 				0D9CFEE52961CE9B0093C36E /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				0D9CFEF4296329340093C36E /* SpeechRecorder.swift in Sources */,
 				0D9CFEF02961D0490093C36E /* ContentTabView.swift in Sources */,
 				0D9CFEE22961CE960093C36E /* AiChatApp.swift in Sources */,
+				0DC2771729646E73004E40E9 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
