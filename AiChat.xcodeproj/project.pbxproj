@@ -64,13 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				0D9CFEE12961CE960093C36E /* AiChatApp.swift */,
-				0D9CFEEF2961D0490093C36E /* ContentTabView.swift */,
-				0D9CFEF12961D2FE0093C36E /* TalkView.swift */,
-				0DC27718296470B1004E40E9 /* BubbleView.swift */,
-				0DC2771629646E73004E40E9 /* ChatModel.swift */,
-				0D9CFEE32961CE960093C36E /* ChatView.swift */,
-				0DC2771A296471E3004E40E9 /* ChatFeedView.swift */,
-				0D9CFEF3296329340093C36E /* SpeechRecorder.swift */,
+				0DC2771C29647323004E40E9 /* Views */,
+				0DC2772029647408004E40E9 /* Helpers */,
+				0DC277212964741B004E40E9 /* Models */,
 				0D9CFEE52961CE9B0093C36E /* Assets.xcassets */,
 				0D9CFEE72961CE9B0093C36E /* Preview Content */,
 			);
@@ -83,6 +79,50 @@
 				0D9CFEE82961CE9B0093C36E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0DC2771C29647323004E40E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D9CFEEF2961D0490093C36E /* ContentTabView.swift */,
+				0DC2771E29647337004E40E9 /* MainViews */,
+				0DC2771D2964732B004E40E9 /* ViewParts */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DC2771D2964732B004E40E9 /* ViewParts */ = {
+			isa = PBXGroup;
+			children = (
+				0DC2771A296471E3004E40E9 /* ChatFeedView.swift */,
+				0DC27718296470B1004E40E9 /* BubbleView.swift */,
+			);
+			path = ViewParts;
+			sourceTree = "<group>";
+		};
+		0DC2771E29647337004E40E9 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				0D9CFEF12961D2FE0093C36E /* TalkView.swift */,
+				0D9CFEE32961CE960093C36E /* ChatView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		0DC2772029647408004E40E9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D9CFEF3296329340093C36E /* SpeechRecorder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0DC277212964741B004E40E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0DC2771629646E73004E40E9 /* ChatModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
