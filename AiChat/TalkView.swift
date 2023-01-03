@@ -29,29 +29,8 @@ struct TalkView: View {
             // チャット部分
             ScrollView {
                 VStack {
-                    
                     ForEach(chats) { remark in
-                        
-                        if remark.isSentByUser {
-                            HStack {
-                                Spacer()
-                                VStack {
-                                    Text(remark.text)
-                                }
-                                .padding()
-                                .background(RoundedCorners(color: Color(.systemBrown), tl: 26, tr: 26, bl: 26, br: 2))
-                            }
-                        } else {
-                            HStack {
-                                VStack {
-                                    Text(remark.text)
-                                }
-                                .padding()
-                                .background(RoundedCorners(color: Color(.systemGray5), tl: 26, tr: 26, bl: 2, br: 26))
-                                Spacer()
-                            }
-                        }
-                        
+                        BubbleView(remark: remark)
                     }
                 }
                 
